@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Blog Project</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>About the Blogger</h1>
+
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <!-- <li><a href="">Contact Me</a></li> -->
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Bio Section -->
+    <section class="bio-section">
+      <h2>About Me</h2>
+      <p>Hi, I’m Riyakat! A passionate writer and web developer exploring the worlds of technology, programming, and design. I started this blog to share insights and tutorials that can help aspiring developers and tech enthusiasts.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+      <h2>Skills & Expertise</h2>
+      <ul class="skills-list">
+        <li>Web Development (HTML, CSS, JavaScript)</li>
+        <li>Front-end Frameworks (Angular)</li>
+        <li>Content Writing and Blogging</li>
+        <li>SEO and Digital Marketing</li>
+      </ul>
+    </section>
+
+    <!-- Latest Blog Posts Section -->
+    <section class="latest-posts">
+      <h2>Latest Posts</h2>
+      <div class="post-preview">
+        <h3>How to Build Responsive Web Apps</h3>
+        <p>An in-depth guide to making your apps look amazing on any device.</p>
+        <a href="https://www.browserstack.com/guide/how-to-create-responsive-website" target="_blank">Read more</a>
+      </div>
+      <div class="post-preview">
+        <h3>Top 15 JavaScript Tricks for Beginners</h3>
+        <p>Learn some of the most useful JavaScript tips that can save you time!</p>
+        <a href="https://dev.to/onlinemsr/15-javascript-tricks-transforming-beginners-to-pros-6fp" target="_blank">Read more</a>
+      </div>
+    </section>
+
+    <button onclick="showContactForm()">Contact Me</button>
+  </main>
+
+  <!-- Contact Form Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closeContactForm()">&times;</span>
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your Email">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Your Message"></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="about.js"></script>
+</body>
+</html>
